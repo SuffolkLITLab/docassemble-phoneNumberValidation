@@ -1,0 +1,42 @@
+metadata:
+  title: Phone number example
+  description: Phone number validation example
+  # Can make a formatter too, but that might be another project
+---
+include:
+  - include-phone-number-validation.yml
+---
+mandatory: True
+id: phone number example
+code: |
+  phone_number_1a
+  phone_number_2a
+---
+id: phone numbers pg1
+question: |
+  Phone number validator, pg 1.
+subquestion: |
+  Taken from https://www.npmjs.com/package/intl-tel-input. Defaults
+  to US and resets country when pressing the 'back' button. Sorry folks.
+  
+  Valid US phone number to try:
+  
+  2015550123
+fields:
+  - no label: phone_number_1a
+    datatype: phone
+  - no label: phone_number_1b
+    datatype: phone
+---
+id: phone numbers pg2 test
+question: |
+  2. What is your other other phone number
+fields:
+  - no label: phone_number_2a
+    datatype: phone
+---
+id: happy exit
+event: exit
+question: |
+  Thanks and goodbye!
+

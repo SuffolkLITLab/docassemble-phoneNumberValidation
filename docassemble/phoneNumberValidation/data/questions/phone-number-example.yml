@@ -23,16 +23,16 @@ subquestion: |
   
   2015550123
 fields:
-  - no label: phone_number_1a
+  - Phone number 1a: phone_number_1a
     datatype: phone
-  - no label: phone_number_1b
+  - Phone number 1b: phone_number_1b
     datatype: phone
 ---
 id: phone numbers pg2 test
 question: |
   2. What is your other other phone number
 fields:
-  - no label: phone_number_2a
+  - Phone number 2a: phone_number_2a
     datatype: phone
 ---
 id: happy exit
